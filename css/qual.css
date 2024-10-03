@@ -9,7 +9,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    vertical-align: 85px;
+    line-height: 20px;
+}
+
+.links a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
 }
 
 header {
@@ -20,12 +40,13 @@ header {
 
 .logo {
     width: 80px;
+    position: fixed;
 }
 
 /* Botão de voltar */
 nav {
     position: absolute;
-    top: 20px;
+    top: 40px;
     right: 20px;
 }
 
@@ -50,6 +71,7 @@ nav a:hover {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    align-items: center;
     width: 80%;
     max-width: 600px;
 }
@@ -63,12 +85,20 @@ nav a:hover {
     color: #333;
     font-size: 18px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 audio {
     margin: 20px 0;
     width: 100%;
     border-radius: 10px;
+    vertical-align: 50px;
+}
+.timer {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: 50px;
 }
 
 /* Botões das opções */
@@ -143,4 +173,36 @@ audio {
     transform: translate(-50%, -50%);
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.ancora {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #007BB5;
+    padding: 10px 0px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    vertical-align: 30px;
+}
+
+.musica {
+    text-decoration: none;
+    color: #054F7;
+    font-size: 18px;
+    background-color: #00A8FF;
+    padding: 10px 0px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.voltar {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #007BB5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    vertical-align: 80px;
 }

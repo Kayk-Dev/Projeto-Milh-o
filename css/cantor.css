@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
 
 .logo {
     width: 80px;
+    position: fixed;
 }
 
 /* Botão de voltar */
