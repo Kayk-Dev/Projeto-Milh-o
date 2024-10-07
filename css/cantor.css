@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../img/fundo2.jpg') no-repeat center center fixed;
+    background: url('../img/fundo2.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     display: flex;
