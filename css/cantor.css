@@ -3,14 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../img/fundo2.png') no-repeat center center fixed;
+    background: url('../img/fundo2.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 header {
@@ -21,7 +20,6 @@ header {
 
 .logo {
     width: 80px;
-    position: fixed;
 }
 
 /* Botão de voltar */
@@ -73,8 +71,8 @@ audio {
     border-radius: 10px;
 }
 
-/* Botões das opções */
-.options button {
+/* Botão de mostrar resposta */
+#show-answer-btn {
     background-color: #007BB5;
     color: #fff;
     border: none;
@@ -84,11 +82,9 @@ audio {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    width: 45%;
-    display: inline-block;
 }
 
-.options button:hover {
+#show-answer-btn:hover {
     background-color: #005f87;
     transform: scale(1.05);
 }

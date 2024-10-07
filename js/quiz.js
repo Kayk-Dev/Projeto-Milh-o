@@ -1,79 +1,51 @@
-const quizData = [
-    {
-        audio: 'music/fase1.mp3',
-        correctAnswer: 2, // Cantor 3 é a resposta correta para a fase 1
-        image: 'img/cantor3.jpg'
-    },
-    {
-        audio: 'music/fase2.mp3',
-        correctAnswer: 0, // Cantor 1 é a resposta correta para a fase 2
-        image: 'img/cantor1.jpg'
-    },
-    {
-        audio: 'music/fase3.mp3',
-        correctAnswer: 3, // Cantor 4 é a resposta correta para a fase 3
-        image: 'img/cantor4.jpg'
-    },
-    {
-        audio: 'music/fase4.mp3',
-        correctAnswer: 1, // Cantor 2 é a resposta correta para a fase 4
-        image: 'img/cantor2.jpg'
-    },
-    {
-        audio: 'music/fase5.mp3',
-        correctAnswer: 2, // Cantor 3 é a resposta correta para a fase 5
-        image: 'img/cantor3.jpg'
-    },
-    {
-        audio: 'music/fase6.mp3',
-        correctAnswer: 1, // Cantor 2 é a resposta correta para a fase 6
-        image: 'img/cantor2.jpg'
-    },
-    {
-        audio: 'music/fase7.mp3',
-        correctAnswer: 0, // Cantor 1 é a resposta correta para a fase 7
-        image: 'img/cantor1.jpg'
-    },
-    {
-        audio: 'music/fase8.mp3',
-        correctAnswer: 3, // Cantor 4 é a resposta correta para a fase 8
-        image: 'img/cantor4.jpg'
-    }
+let faseAtual = 1;
+const totalFases = 26;
+const musicas = [
+    'music/fase1.mp3',
+    'music/fase2.mp3',
+    'music/fase3.mp3',
+    'music/fase4.mp3',
+    'music/fase5.mp3',
+    'music/fase6.mp3',
+    'music/fase7.mp3',
+    'music/fase8.mp3'
 ];
+const imagensCantores = [
+    'img/cantor1.jpg',
+    'img/cantor2.jpg',
+    'img/cantor3.jpg',
+    'img/cantor4.jpg',
+    'img/cantor5.jpg',
+    'img/cantor6.jpg',
+    'img/cantor7.jpg',
+    'img/cantor8.jpg'
+];
+const respostasCorretas = [2, 0, 3, 1, 2, 0, 3, 1];
 
-let currentStage = 0;
-
-function checkAnswer(selectedOption) {
-    const correctAnswer = quizData[currentStage].correctAnswer;
+function showAnswer() {
     const feedback = document.getElementById('feedback');
-    const nextStage = document.getElementById('next-stage');
     const singerImg = document.getElementById('singer-img');
-
-    if (selectedOption === correctAnswer) {
-        feedback.textContent = 'Você acertou!';
-        feedback.style.color = '#007BB5';
-        singerImg.src = quizData[currentStage].image;
-        nextStage.style.display = 'block';
-    } else {
-        feedback.textContent = 'Resposta errada. Tente novamente.';
-        feedback.style.color = '#FF1744';
-        nextStage.style.display = 'none';
-    }
+    
+    feedback.innerText = 'Aqui está a resposta!';
+    singerImg.src = imagensCantores[respostasCorretas[faseAtual - 1]];
+    singerImg.style.display = 'block'; // Mostrar a imagem
+    
+    // Exibir botão para próxima fase
+    document.getElementById('next-stage').style.display = 'block';
 }
 
 function nextStage() {
-    currentStage++;
-    if (currentStage < quizData.length) {
-        // Atualiza o áudio e reseta o quiz para a próxima fase
-        const audioElement = document.getElementById('quiz-audio');
-        const audioSource = document.getElementById('audio-source');
-        audioSource.src = quizData[currentStage].audio;
-        audioElement.load();
+    faseAtual++;
 
-        // Reseta feedback e esconde o botão de próxima fase
-        document.getElementById('feedback').textContent = '';
-        document.getElementById('next-stage').style.display = 'none';
+    if (faseAtual > totalFases) {
+        document.getElementById('completion-message').style.display = 'block';
     } else {
-        alert('Parabéns! Você completou o quiz.');
+        document.getElementById('fase-atual').innerText = faseAtual;
+        document.getElementById('audio-source').src = musicas[faseAtual - 1];
+        document.getElementById('quiz-audio').load();
+        document.getElementById('feedback').innerText = '';
+        document.getElementById('singer-img').src = '';
+        document.getElementById('singer-img').style.display = 'none'; // Ocultar imagem para nova fase
+        document.getElementById('next-stage').style.display = 'none';
     }
 }

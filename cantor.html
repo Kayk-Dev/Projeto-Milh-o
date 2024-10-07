@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem é o Cantor?</title>
+    <title>Quiz: Qual é o Cantor?</title>
     <link rel="stylesheet" href="css/cantor.css">
 </head>
 <body>
@@ -16,29 +16,24 @@
     </nav>
 
     <div class="quiz-container">
-        <h1>Qual é a Música?</h1>
-        <h2>Fase <span id="fase-atual">1</span> de 8</h2>
+        <h1>Quiz: Qual é o Cantor?</h1>
+        <h2>Fase <span id="fase-atual">1</span> de 26</h2>
         <audio id="quiz-audio" controls>
             <source id="audio-source" src="music/fase1.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
 
-        <div class="options">
-            <button onclick="checkAnswer(0)">Cantor 1</button>
-            <button onclick="checkAnswer(1)">Cantor 2</button>
-            <button onclick="checkAnswer(2)">Cantor 3</button>
-            <button onclick="checkAnswer(3)">Cantor 4</button>
-        </div>
-
         <div class="feedback" id="feedback"></div>
-        <img id="singer-img" class="singer-img" src="" alt="Cantor">
+        
+        <button id="show-answer-btn" onclick="showAnswer()">Mostrar Resposta</button>
+        <img id="singer-img" class="singer-img" src="" alt="Cantor" style="display: none;">
 
         <div class="next-stage" id="next-stage">
             <button onclick="nextStage()">Próxima Fase</button>
         </div>
     </div>
 
-    <div id="completion-message">Parabéns, você completou o desafio!</div>
+    <div id="completion-message">Parabéns, vocês completaram o desafio!</div>
 
     <script src="js/quiz.js"></script>
 </body>
