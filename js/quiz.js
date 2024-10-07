@@ -44,7 +44,7 @@ const imagensCantores = [
     'artistas/skank.webp',
     'artistas/mamonas.webp',
 ];
-const respostasCorretas = [2, 0, 3, 1, 2, 0, 3, 1, 2, 0, 3, 1, 2, 0, 3, 1, 3, 1];
+const respostasCorretas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 function showAnswer() {
     const feedback = document.getElementById('feedback');
