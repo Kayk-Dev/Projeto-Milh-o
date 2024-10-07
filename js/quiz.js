@@ -27,7 +27,7 @@ const imagensCantores = [
     'artistas/César_Menotti_&_Fabiano_2004.jpg',
     'artistas/João_Bosco_&_Vinícius_2011.jpg',
     'artistas/Xuxa1.jpg',
-    'artistas/ara_ketu.jpg',
+    'artistas/luan_santana.webp',
     'artistas/bruno_e_marrone.jpg',
     'artistas/cassia-eller-malandragem.jpg',
     'artistas/claudinho_bochecha.jpg',
