@@ -1,5 +1,5 @@
 let faseAtual = 1;
-const totalFases = 26;
+const totalFases = 20;
 const musicas = [
     'music/',
     'music/',
@@ -44,7 +44,7 @@ const imagensCantores = [
     'artistas/skank.webp',
     'artistas/mamonas.webp',
 ];
-const respostasCorretas = [2, 0, 3, 1, 2, 0, 3, 1];
+const respostasCorretas = [2, 0, 3, 1, 2, 0, 3, 1, 2, 0, 3, 1, 2, 0, 3, 1, 3, 1];
 
 function showAnswer() {
     const feedback = document.getElementById('feedback');
