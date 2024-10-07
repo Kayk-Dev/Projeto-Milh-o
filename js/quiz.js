@@ -11,14 +11,26 @@ const musicas = [
     'music/fase8.mp3'
 ];
 const imagensCantores = [
-    'img/cantor1.jpg',
-    'img/cantor2.jpg',
-    'img/cantor3.jpg',
-    'img/cantor4.jpg',
-    'img/cantor5.jpg',
-    'img/cantor6.jpg',
-    'img/cantor7.jpg',
-    'img/cantor8.jpg'
+    'artistas/Chitaozinho-xororo.jpg',
+    'artistas/César_Menotti_&_Fabiano_2004.jpg',
+    'artistas/João_Bosco_&_Vinícius_2011.jpg',
+    'artistas/Xuxa1.jpg',
+    'artistas/ara_ketu.jpg',
+    'artistas/bruno_e_marrone.jpg',
+    'artistas/cassia-eller-malandragem.jpg',
+    'artistas/claudinho_bochecha.jpg',
+    'artistas/jorge_mateus.jpg',
+    'artistas/legiao_urbana.jpg',
+    'artistas/los_hermanos.jpg',
+    'artistas/pitty.jpg',
+    'artistas/ritchie.jpg',
+    'artistas/roupanovaep.jpg',
+    'artistas/sandy_junior.jpg',
+    'artistas/seu_jorge.jpg',
+    'artistas/tim_maia.jpg',
+    'artistas/turma_pagode.jpg',
+    'artistas/skank.webp',
+    'artistas/mamonas.webp',
 ];
 const respostasCorretas = [2, 0, 3, 1, 2, 0, 3, 1];
 
