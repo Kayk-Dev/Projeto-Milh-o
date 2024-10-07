@@ -1,14 +1,26 @@
 let faseAtual = 1;
 const totalFases = 26;
 const musicas = [
-    'music/fase1.mp3',
-    'music/fase2.mp3',
-    'music/fase3.mp3',
-    'music/fase4.mp3',
-    'music/fase5.mp3',
-    'music/fase6.mp3',
-    'music/fase7.mp3',
-    'music/fase8.mp3'
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/',
+    'music/'
 ];
 const imagensCantores = [
     'artistas/Chitaozinho-xororo.jpg',
