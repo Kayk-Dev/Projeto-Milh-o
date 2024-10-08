@@ -1,7 +1,6 @@
 let faseAtual = 1;
 const totalFases = 20;
 const musicas = [
-    'feitas/Chitãozinho & Xororó - Evidências.mp3',
     'feitas/Cesar Menotti, Fabiano - Leilão.mp3',
     'feitas/João Bosco & Vinícius - Chora Me Liga (Ao Vivo).mp3',
     'feitas/XUXA- LUA DE CRISTAL (SOM DIGITAL).mp3',
