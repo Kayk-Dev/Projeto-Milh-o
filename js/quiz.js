@@ -17,11 +17,11 @@ const musicas = [
     'music/Roupa Nova - Whisky a Go Go (Ao Vivo).mp3',
     'music/Sandy & Junior - A Lenda.mp3',
     'music/Mina do Condomínio - seu jorge.mp3',
-    'music/',
-    'music/',
-    'music/',
-    'music/',
-    'music/'
+    'music/Não Quero Dinheiro - tim maia.mp3',
+    'music/Turma do Pagode - Lancinho (Letra).mp3',
+    'music/Skank - É Uma Partida De Futebol.mp3',
+    'music/Mamonas Assassinas - Pelados em Santos (Videoclipe).mp3',
+    'music/Pescador de ilusões - o Rappa Letra.mp3'
 ];
 const imagensCantores = [
     'artistas/Chitaozinho-xororo.jpg',
