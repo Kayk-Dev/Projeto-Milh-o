@@ -8,7 +8,7 @@ const musicas = [
     'feitas/Bruno & Marrone - Dormi na Praça (Ao Vivo).mp3',
     'feitas/Cassia Eller - Malandragem (Lyric).mp3',
     'feitas/Claudinho E Buchecha-Fico Assim Sem Voce.mp3',
-    'feitas/Jorge & Mateus - Um Dia Te Levo Comigo - [DVD O Mundo é Tão Pequeno] - (Clipe Oficial).mp3',
+    'feitas/Jorge.mp3',
     'feitas/Legião Urbana · Eduardo e Mônica.mp3',
     'feitas/Los Hermanos - Anna Júlia (Video Clipe).mp3',
     'feitas/Pitty - Me Adora (Clipe Oficial).mp3',
