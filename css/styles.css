@@ -18,16 +18,27 @@ body {
     align-items: center;
 }
 
+/* Centralização do conteúdo */
 .container {
     text-align: center;
 }
 
+/* Imagem grande no topo */
+.top-image {
+    width: 100%;
+    max-width: 1200px; /* Defina uma largura máxima para a imagem */
+    height: auto;
+    margin-bottom: 20px; /* Espaçamento entre o topo e a logo */
+}
+
+/* Estilo da logo */
 .logo {
     width: 450px;
     height: auto;
     margin-bottom: 20px;
 }
 
+/* Estilos dos links */
 .links a {
     display: inline-block;
     margin: 10px;
